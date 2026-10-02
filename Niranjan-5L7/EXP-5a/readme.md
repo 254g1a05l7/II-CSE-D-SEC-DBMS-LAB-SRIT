@@ -89,5 +89,5 @@ EXCEPTION
         DBMS_OUTPUT.PUT_LINE('Error: ' || SQLERRM);
 END;
 ```
-![OUTPUT](5.PNG)
+![OUTPUT](5.jpeg)
 ```
