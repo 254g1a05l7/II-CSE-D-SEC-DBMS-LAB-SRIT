@@ -6,7 +6,7 @@ CREATE VIEW EMP_VIEW AS
 SELECT *
 FROM EMPLOYEES;
 ```
-![OUTPUT](1.jpeg)
+![OUTPUT](1.PNG)
 ```
 # Q2. Create EMP_BASIC
 ```
@@ -15,7 +15,7 @@ CREATE VIEW EMP_BASICS AS
 SELECT EMPLOYEE_ID, FIRST_NAME, LAST_NAME, DEPARTMENT, SALARY
 FROM EMPLOYEES;
 ```
-![OUTPUT](2.jpeg)
+![OUTPUT](2.PNG)
 ```
 # Q3. Display all records from EMP_VIEW
 ```
@@ -23,7 +23,7 @@ FROM EMPLOYEES;
 SELECT *
 FROM EMP_VIEW;
 ```
-![OUTPUT](3.jpeg)
+![OUTPUT](3.PNG)
 ```
 # Q4. Create IT_EMPLOYEES
 ```
@@ -33,7 +33,7 @@ SELECT *
 FROM EMPLOYEES
 WHERE DEPARTMENT = 'IT';
 ```
-![OUTPUT](4.jpeg)
+![OUTPUT](4.PNG)
 ```
 # Q5. Create HIGH_SALARY
 ```
@@ -43,7 +43,7 @@ SELECT *
 FROM EMPLOYEES
 WHERE SALARY > 60000;
 ```
-![OUTPUT](5.jpeg)
+![OUTPUT](5.PNG)
 ```
 # Q6. Create HYDERABAD_EMP
 ```
@@ -53,7 +53,7 @@ SELECT *
 FROM EMPLOYEES
 WHERE CITY = 'Hyderabad';
 ```
-![OUTPUT](6.jpeg)
+![OUTPUT](6.PNG)
 ```
 # Q7. Create FEMALE_EMP
 ```
@@ -63,7 +63,7 @@ SELECT *
 FROM EMPLOYEES
 WHERE GENDER = 'Female';
 ```
-![OUTPUT](7.jpeg)
+![OUTPUT](7.PNG)
 ```
 # Q8. Create RECENT_EMPLOYEES
 ```
@@ -73,7 +73,7 @@ SELECT *
 FROM EMPLOYEES
 WHERE HIRE_DATE >= DATE '2020-01-01';
 ```
-![OUTPUT](8.jpeg)
+![OUTPUT](8.PNG)
 ```
 # Q9. Display Employee ID, First Name and Salary from HIGH_SALARY
 ```
@@ -81,7 +81,7 @@ WHERE HIRE_DATE >= DATE '2020-01-01';
 SELECT EMPLOYEE_ID, FIRST_NAME, SALARY
 FROM HIGH_SALARY;
 ```
-![OUTPUT](9.jpeg)
+![OUTPUT](9.PNG)
 ```
 # Q10. Replace EMP_BASIC by adding CITY
 ```
@@ -91,7 +91,7 @@ SELECT EMPLOYEE_ID, FIRST_NAME, LAST_NAME,
        DEPARTMENT, SALARY, CITY
 FROM EMPLOYEES;
 ```
-![OUTPUT](10.jpeg)
+![OUTPUT](10.PNG)
 ```
 # Q11. Create read-only EMP_SALARY_VIEW
 ```
@@ -101,7 +101,7 @@ SELECT EMPLOYEE_ID, FIRST_NAME, LAST_NAME, SALARY
 FROM EMPLOYEES
 WITH READ ONLY;
 ```
-![OUTPUT](11.jpeg)
+![OUTPUT](11.PNG)
 ```
 # Q12. Create SALES_EMP with CHECK OPTION
 ```
@@ -112,7 +112,7 @@ FROM EMPLOYEES
 WHERE DEPARTMENT = 'Sales'
 WITH CHECK OPTION;
 ```
-![OUTPUT](12.jpeg)
+![OUTPUT](12.PNG)
 ```
 # Q13. Update salary of employee 101 through EMP_BASIC
 ```
@@ -121,7 +121,7 @@ UPDATE EMP_BASIC
 SET SALARY = 70000
 WHERE EMPLOYEE_ID = 101;
 ```
-![OUTPUT](13.jpeg)
+![OUTPUT](13.PNG)
 ```
 # Q14. Delete employee 107 through EMP_VIEW
 ```
@@ -129,7 +129,7 @@ WHERE EMPLOYEE_ID = 101;
 DELETE FROM EMP_VIEW
 WHERE EMPLOYEE_ID = 107;
 ```
-![OUTPUT](14.jpeg)
+![OUTPUT](14.PNG)
 ```
 # Q15. Insert a new employee through EMP_BASIC
 ```
@@ -139,14 +139,14 @@ INSERT INTO EMP_BASIC
 VALUES
 (111, 'Neha', 'Reddy', 'IT', 65000, 'Hyderabad');
 ```
-![OUTPUT](15.jpeg)
+![OUTPUT](15.PNG)
 ```
 # Q16. Display structure of EMP_BASIC
 ```
 ```
 DESC EMP_BASIC;
 ```
-![OUTPUT](16.jpeg)
+![OUTPUT](16.PNG)
 ```
 # Q17. Display all records from IT_EMPLOYEES
 ```
@@ -154,7 +154,7 @@ DESC EMP_BASIC;
 SELECT *
 FROM IT_EMPLOYEES;
 ```
-![OUTPUT](17.jpeg)
+![OUTPUT](17.PNG)
 ```
 # Q18. Display employees from HIGH_SALARY whose salary > 70000
 ```
@@ -163,7 +163,7 @@ SELECT *
 FROM HIGH_SALARY
 WHERE SALARY > 70000;
 ```
-![OUTPUT](18.jpeg)
+![OUTPUT](18.PNG)
 ```
 # Q19. Display all female employees
 ```
@@ -171,7 +171,7 @@ WHERE SALARY > 70000;
 SELECT *
 FROM FEMALE_EMP;
 ```
-![OUTPUT](19.jpeg)
+![OUTPUT](19.PNG)
 ```
 # Q20. Display names and salaries from HYDERABAD_EMP
 ```
@@ -179,28 +179,28 @@ FROM FEMALE_EMP;
 SELECT FIRST_NAME, LAST_NAME, SALARY
 FROM HYDERABAD_EMP;
 ```
-![OUTPUT](20.jpeg)
+![OUTPUT](20.PNG)
 ```
 # Q21. Drop EMP_VIEW
 ```
 ```
 DROP VIEW EMP_VIEW;
 ```
-![OUTPUT](21.jpeg)
+![OUTPUT](21.PNG)
 ```
 # Q22. Drop HIGH_SALARY
 ```
 ```
 DROP VIEW HIGH_SALARY;
 ```
-![OUTPUT](22.jpeg)
+![OUTPUT](22.PNG)
 ```
 # Q23. Drop EMP_BASIC
 ```
 ```
 DROP VIEW EMP_BASIC;
 ```
-![OUTPUT](23.jpeg)
+![OUTPUT](23.PNG)
 ```
 # Q24. Create HR_EMPLOYEES
 ```
@@ -210,7 +210,7 @@ SELECT *
 FROM EMPLOYEES
 WHERE DEPARTMENT = 'HR';
 ```
-![OUTPUT](24.jpeg)
+![OUTPUT](24.PNG)
 ```
 # Q25. Create MARKETING_EMP
 ```
@@ -221,7 +221,7 @@ SELECT EMPLOYEE_ID, FIRST_NAME, LAST_NAME,
 FROM EMPLOYEES
 WHERE DEPARTMENT = 'Marketing';
 ```
-![OUTPUT](25.jpeg)
+![OUTPUT](25.PNG)
 ```
 # Q26. Create TOP_EARNERS
 ```
@@ -231,7 +231,7 @@ SELECT *
 FROM EMPLOYEES
 WHERE SALARY > 70000;
 ```
-![OUTPUT](26.jpeg)
+![OUTPUT](26.PNG)
 ```
 # Q27. Create EMP_CITY
 ```
@@ -240,5 +240,5 @@ CREATE VIEW EMP_CITY AS
 SELECT EMPLOYEE_ID, FIRST_NAME, LAST_NAME, CITY
 FROM EMPLOYEES;
 ```
-![OUTPUT](27.jpeg)
+![OUTPUT](27.PNG)
 ```
