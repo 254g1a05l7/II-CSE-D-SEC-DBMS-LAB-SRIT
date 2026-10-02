@@ -6,7 +6,7 @@ CREATE TABLE DEPT
     DNAME VARCHAR2(30)
 );
 ```
-![output](1.PNG)
+![output](1.jpeg)
 ```
 
 # Q2. Apply Primary Key constraint for DNO and NOT NULL constraint for DNAME.
@@ -18,7 +18,7 @@ ADD CONSTRAINT PK_DEPT PRIMARY KEY (DNO);
 ALTER TABLE DEPT
 MODIFY DNAME NOT NULL;
 ```
-![OUTPUT](2.PNG)
+![OUTPUT](2.jpeg)
 ```
 # Q3. Create a STUDENT table having SID, SNAME, and DID as columns.
 ```
@@ -30,7 +30,7 @@ CREATE TABLE STUDENT
     DID NUMBER
 );
 ```
-![OUTPUT](3.PNG)
+![OUTPUT](3.jpeg)
 ```
 # Q4. Apply Primary Key constraint to SID, NOT NULL constraint to SNAME and Foreign Key constraint to DID.
 ```
@@ -46,7 +46,7 @@ ADD CONSTRAINT FK_STUDENT_DEPT
 FOREIGN KEY (DID)
 REFERENCES DEPT(DNO);
 ```
-![OUTPUT](4.PNG)
+![OUTPUT](4.jpeg)
 ```
 
 # Q5. Insert all department details like CSE, ME, CE, EEE, ECE, CSM, CSD.
@@ -60,7 +60,7 @@ INSERT INTO DEPT VALUES (50, 'ECE');
 INSERT INTO DEPT VALUES (60, 'CSM');
 INSERT INTO DEPT VALUES (70, 'CSD');
 ```
-![OUTPUT](5.PNG)
+![OUTPUT](5.jpeg)
 ```
 
 # Q6. Insert at least 10 rows in STUDENT table.
@@ -78,7 +78,7 @@ INSERT INTO STUDENT VALUES (108, 'Ravi', 20);
 INSERT INTO STUDENT VALUES (109, 'Divya', 50);
 INSERT INTO STUDENT VALUES (110, 'Manoj', NULL);
 ```
-![OUTPUT](6.PNG)
+![OUTPUT](6.jpeg)
 ```
 
 # Q7. SQL Query to implement NATURAL JOIN between Student and Dept
@@ -92,7 +92,7 @@ FROM STUDENT S
 JOIN DEPT D
 ON S.DID = D.DNO;
 ```
-![OUTPUT](7.PNG)
+![OUTPUT](7.jpeg)
 ```
 
 # Q8. SQL Query to implement EQUI JOIN between Student and Dept
@@ -105,7 +105,7 @@ FROM STUDENT S
 JOIN DEPT D
 ON S.DID = D.DNO;
 ```
-![OUTPUT](8.PNG)
+![OUTPUT](8.jpeg)
 ```
 
 
@@ -118,7 +118,7 @@ JOIN DEPT D
 ON S.DID = D.DNO
 AND S.SID > 105;
 ```
-![OUTPUT](9.PNG)
+![OUTPUT](9.jpeg)
 ```
 
 
@@ -132,7 +132,7 @@ FROM STUDENT S
 LEFT OUTER JOIN DEPT D
 ON S.DID = D.DNO;
 ```
-![OUTPUT](10.PNG)
+![OUTPUT](10.jpeg)
 ```
 
 # Q11. SQL Query to implement RIGHT OUTER NATURAL JOIN
@@ -145,7 +145,7 @@ FROM STUDENT S
 RIGHT OUTER JOIN DEPT D
 ON S.DID = D.DNO;
 ```
-![OUTPUT](11.PNG)
+![OUTPUT](11.jpeg)
 ```
 # Q12. SQL Query to implement FULL OUTER NATURAL JOIN
 ```
@@ -157,7 +157,7 @@ FROM STUDENT S
 FULL OUTER JOIN DEPT D
 ON S.DID = D.DNO;
 ```
-![OUTPUT](12.PNG)
+![OUTPUT](12.jpeg)
 ```
 # Q13. SQL Query to implement LEFT OUTER EQUI JOIN
 ```
@@ -170,7 +170,7 @@ FROM STUDENT S
 LEFT OUTER JOIN DEPT D
 ON S.DID = D.DNO;
 ```
-![OUTPUT](13.PNG)
+![OUTPUT](13.jpeg)
 ```
 
 # Q14. SQL Query to implement RIGHT OUTER EQUI JOIN
@@ -183,7 +183,7 @@ FROM STUDENT S
 RIGHT OUTER JOIN DEPT D
 ON S.DID = D.DNO;
 ```
-![OUTPUT](14.PNG)
+![OUTPUT](14.jpeg)
 ```
 
 # Q15. SQL Query to implement FULL OUTER EQUI JOIN
@@ -196,7 +196,7 @@ FROM STUDENT S
 FULL OUTER JOIN DEPT D
 ON S.DID = D.DNO;
 ```
-![OUTPUT](15.PNG)
+![OUTPUT](15.jpeg)
 ```
 # Q16. SQL Query to implement LEFT OUTER CONDITIONAL JOIN
 ```
@@ -209,7 +209,7 @@ LEFT OUTER JOIN DEPT D
 ON S.DID = D.DNO
 AND S.SID > 105;
 ```
-![OUTPUT](16.PNG)
+![OUTPUT](16.jpeg)
 ```
 # Q17. SQL Query to implement RIGHT OUTER CONDITIONAL JOIN
 ```
@@ -222,7 +222,7 @@ RIGHT OUTER JOIN DEPT D
 ON S.DID = D.DNO
 AND S.SID > 105;
 ```
-![OUTPUT](17.PNG)
+![OUTPUT](17.jpeg)
 
 # Q18. SQL Query to implement FULL OUTER CONDITIONAL JOIN
 ```
@@ -236,7 +236,7 @@ FULL OUTER JOIN DEPT D
 ON S.DID = D.DNO
 AND S.SID > 105;
 ```
-![OUTPUT](18.PNG)
+![OUTPUT](18.jpeg)
 ```
 # Q19. SQL Query to implement CROSS JOIN between Student and Dept
 ```
@@ -248,9 +248,9 @@ SELECT S.SID,
 FROM STUDENT S
 CROSS JOIN DEPT D;
 ```
-![OUTPUT](19.PNG)
-![OUTPUT](19a.PNG)
-![OUTPUT](19b.PNG)
+![OUTPUT](19.jpeg)
+![OUTPUT](20.jpeg)
+![OUTPUT](21.jpeg)
 ```
 
 # Q20. Practice how to apply the above JOIN operations for the queries asked in WEEK 2 Experiment
@@ -287,10 +287,10 @@ JOIN DEPT D
 ON S.DID = D.DNO
 AND S.SID > 105;
 ```
-![OUTPUT](20.PNG)
-![OUTPUT](20a.PNG)
-![OUTPUT](20b.PNG)
-![OUTPUT](20c.PNG)
-![OUTPUT](20d.PNG)
-![OUTPUT](20e.PNG)
+![OUTPUT](22.jpeg)
+![OUTPUT](23.jpeg)
+![OUTPUT](24.jpeg)
+![OUTPUT](25.jpeg)
+![OUTPUT](26.jpeg)
+![OUTPUT](27.jpeg)
 ```
